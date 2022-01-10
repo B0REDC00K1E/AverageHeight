@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+//Marija Crvenkovska INKI848
+//Za n clenovi na klub, da se vnesat visini (150-200) i od niv da ispecati prosecnata visina,
+//da se izdvojat visinite koi variraat za +/-10 od prosecnata visina, i da se izdvojat visinite koi 
+//variraat od 0 do +15% vo odnos na min visina i od 0 do -20% vo odnos na max visina
+
 int print(double *a, int n)   //za pecatenje na niza
 {
     for(int i=0; i<n; i++)
@@ -10,7 +15,7 @@ int print(double *a, int n)   //za pecatenje na niza
     cout<<endl;
 }
 
-int main()    //Inki848
+int main()    
 {
     int n,x;
     cout<<"Enter number of club members: ";
@@ -49,8 +54,6 @@ int main()    //Inki848
     cout<<"Average height of the members is: "<<av<<endl<<endl;
     
     double avl=av-10, avh=av+10;      //visini koi variraat za +/-10 od prosecnata visina
-    cout<<"Average + 10: "<<avh<<endl;
-    cout<<"Average - 10: "<<avl<<endl;
     cout<<"Heights that vary by +/- 10 centimeters of the average height: ";
     for(int i=0;i<n;i++)
  	  if(cm[i]>avl && cm[i]>avh)
